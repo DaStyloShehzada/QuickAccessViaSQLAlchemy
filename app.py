@@ -1,9 +1,5 @@
-import os
 from flask import Flask, render_template, request
-import datetime
 from dotenv import load_dotenv
-import pyodbc
-import sqlparams
 import urllib
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import or_
