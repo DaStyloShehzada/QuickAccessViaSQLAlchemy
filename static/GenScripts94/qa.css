@@ -1,0 +1,1222 @@
+<style type="text/css">
+<!--
+/*		 	 								 INPUT
+{
+text-transform:uppercase;
+}
+Input
+{
+text-transform:uppercase;
+}
+		 	 								 input
+{
+text-transform:uppercase;
+}
+TEXTAREA
+{
+text-transform:uppercase;
+}*/
+
+									 
+		 	 								 /* for defalult page body*/
+											 /*New Css*/
+											 body {
+											 	font-family: Arial, Helvetica, sans-serif;
+												
+												/*aDDED  FROM OLD CSS NOT IN NEW CSS*/
+												scrollbar-3d-light-color : #EFEFEF;
+		 	 								 	scrollbar-arrow-color : blue /*#FFCC00;*/
+		 	 								 	scrollbar-base-color : #DFDFDF;
+		 	 								 	scrollbar-dark-shadow-color : #3D3D3D;
+		 	 								 	scrollbar-face-color : #eFeFeF;
+		 	 								 	scrollbar-highlight-color : #ffffff;
+		 	 								 	scrollbar-shadow-color : #DFDFDF;
+		 	 								 /*	margin-left: 1%; margin-right: 1%;*/
+		 	 								 	color:		#000000;
+		 	 								 	
+												}
+												/*OLD CSS
+		 	 								 BODY									{
+		 	 								 	scrollbar-3d-light-color : #EFEFEF;
+		 	 								 	scrollbar-arrow-color : #FFCC00;
+		 	 								 	scrollbar-base-color : #DFDFDF;
+		 	 								 	scrollbar-dark-shadow-color : #3D3D3D;
+		 	 								 	scrollbar-face-color : #eFeFeF;
+		 	 								 	scrollbar-highlight-color : #ffffff;
+		 	 								 	scrollbar-shadow-color : #DFDFDF;
+		 	 								 	margin-left: 1%; margin-right: 1%;
+		 	 								 	color:		#000000;
+		 	 								 	font-family:	Arial, Verdana, Helvetica;
+		 	 								 	font-size: 10pt;
+		 	 								 	background-image :url( /images/background.gif);
+		 	 								 }*/
+		 	 								 /* for  page headers-big */
+		 	 								 H1										{
+		 	 								 	margin-left: 1%; margin-right: 0;
+		 	 								 	margin-top: 1em;margin-bottom: 1em;
+		 	 								 	color:		#993300;
+		 	 								 	font-family:Arial, Verdana, Helvetica;
+		 	 								 	font-size: 150%;
+		 	 								 }
+		 	 								 /* for  page sub headers/group headers-mediam*/
+		 	 								 H2								 		{
+		 	 								 	margin-left: 1%; margin-right: 0;
+		 	 								 	margin-top: 1em;margin-bottom: 1em;
+		 	 								 	font-family:Arial, Verdana, Helvetica;
+		 	 								 	font-size: 120%;
+		 	 								 	color:	#993300;
+		 	 								 }
+		 	 								 /* for page headers with input variable*/
+		 	 								 .H2								 		{
+		 	 								 	border:none;
+		 	 								 	margin-left: 1%; margin-right: 0;
+		 	 								 	margin-top: 1em;margin-bottom: 1em;
+		 	 								 	font-family:Arial, Verdana, Helvetica;
+		 	 								 	font-weight:bolder;
+		 	 								 	font-size: 120%;
+		 	 								 	color:	#993300;
+		 	 								 }
+		 	 								 /* for  page sub headers/sub group headers-small*/
+		 	 								 H3, H4, H5 						{
+		 	 								 	margin-left: 1%;
+		 	 								 	font-family:Arial, Verdana, Helvetica;
+		 	 								 	font-size: 90%;
+		 	 								 	color:		#993300;
+		 	 								 }
+
+		 	 								 /* 	for normal unvisited links */
+											 a {
+											 	font-family: Arial, Helvetica, sans-serif;
+													text-decoration:none;
+														color: #000000;
+															border: 0px none;
+															}
+															/*
+		 	 								 a								 		  {
+		 	 								 	color:#9900CC;
+		 	 								 	font-size: 9pt;
+		 	 								 }
+											 */
+											 		a:visited {
+													font-family: Arial, Helvetica, sans-serif;
+													color: #000000;
+													border: 0px none;
+													}
+													a:hover {
+													font-family: Arial, Helvetica, sans-serif;
+													color: #FFFFFF;
+													text-decoration:underline;
+													border: 0px none;
+													
+													}
+   												a:active {
+		  										font-family: Arial, Helvetica, sans-serif;
+													color: #000000;
+													border: 0px none;
+												}
+												a.disable:hover{
+													font-family: Arial, Helvetica, sans-serif;
+													color: #FFFFFF;
+													text-decoration:none;
+													border: 0px none;
+													
+													}
+																							
+/*
+		 	 								 for visited links
+		 	 								 .visited 		  							{
+		 	 								 	color: rgb(153, 0, 153);
+		 	 								 	text-decoration:none;
+		 	 								 }
+		 	 							
+										*/
+		 	 								 /* when link is clicked */
+											 /*
+		 	 								 .active 					 			  {
+		 	 								 	color: rgb(255, 0, 102);
+
+		 	 								 }*/
+
+		 	 								 /* when mouse is over link */
+											 /*
+		 	 								 a:hover 					 				{
+		 	 								 	color: rgb(0, 96, 255);
+
+		 	 								 }
+											 */
+		 	 								 /* for  top right menu*/
+											 img {
+											 	border: 0px;
+												cursor:hand;
+												}
+
+		 	 								 .topMenu					  				{
+		 	 								 	color: rgb(0, 0, 153);
+		 	 								 	text-decoration:none;
+		 	 								 	font-family:	Arial, Verdana, Helvetica;
+		 	 								 	font-size: 8pt;
+		 	 								 	font-weight: normal;
+		 	 								 }
+		 	 								 /* hover class for  top right menu*/
+		 	 								 a.topMenu:hover 							{
+		 	 								 	color: rgb(0, 96, 255);
+		 	 								 	text-decoration:none;
+		 	 								 }
+		 	 								 /* for  underlined links*/
+
+		 	 								 a.plainLink							{
+		 	 								 	color: #9900CC;
+		 	 								 	text-decoration:none;
+		 	 								 }
+		 	 								 /* gray text for  top right menu*/
+		 	 								 .topMenuGrayText 						{
+		 	 								 	font-family:	Arial, Verdana, Helvetica;
+		 	 								 	font-size: 8pt;
+		 	 								 	font-weight: normal;
+		 	 								 	color: gray;
+		 	 								 }
+		 	 								 /* for  footer text */
+		 	 								 .footer								{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :#003399;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 	text-indent :5px;
+		 	 								 }
+		 	 								 /* for copy right in footer */
+		 	 								 .reg										{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :#003399;
+		 	 								 	font-size: 7pt;
+		 	 								 	font-weight: Normal;
+		 	 								 }
+
+		 	 								 /* for column Headers of Tables */
+											 th {
+											 	font-family: Arial, Helvetica, sans-serif;
+
+												}
+												/*
+		 	 								 TH										{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :#ffffff;
+		 	 								 	background-color:#003366;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 	text-align: center;
+		 	 								 	text-indent :5px;
+		 	 								 }*/
+
+		 	 								 /* for column Headers of Tables  With Input Variable */
+		 	 								 .TH										{
+		 	 								 	border:none;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :#ffffff;
+		 	 								 	background-color:#003366;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 	text-align: center;
+		 	 								 	text-indent :5px;
+		 	 								 }
+
+
+		 	 								 /* Cell of a Table */
+											 td {
+											 	font-family: Arial, Helvetica, sans-serif;
+												}												
+												/*
+		 	 								 TD					    				{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :black;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: normal;
+		 	 								 }*/
+		 	 								 /* toget a border (
+											 ) around used with tables and cells*/
+		 	 								 .box					  					{
+		 	 								 	border-collapse: collapse;
+		 	 								 	border: 1px solid #003366;
+		 	 								 }
+		 	 								 /* to wipeout the border (box) around Tables/cells*/
+		 	 								 .noBorder									{
+		 	 								 	border:none;
+		 	 								 }
+		 	 								 /* To produce a coloured horizontal line with a Cell*/
+		 	 								 TD.horzline									{
+		 	 								 	border-collapse: collapse;
+		 	 								 	border: 1px solid #a5bef7;
+		 	 								 	border-top:none;
+		 	 								 	border-left:none;
+		 	 								 	border-right:none:
+		 	 								 }
+		 	 								 /* for labels of input fields - Lable Text*/
+		 	 								 .InpName				 	 				{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 8pt;
+		 	 								 	font-weight:bolder;
+		 	 								 	color :#003399;
+		 	 								 }
+		 	 								 /* for values of input fields */
+		 	 								 .InpVal									 {
+		 	 								 	border: 1px solid black;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: normal;
+		 	 								 	color :black;
+		 	 								 }
+		 	 								 /* for  input fields with value right aligned */
+		 	 								 .InpRVal									 {
+		 	 								 	border: 1px solid black;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: normal;
+		 	 								 	color :black;
+		 	 								 	text-align:right;
+		 	 								 }
+		 	 								 /* for mandatory input fields */
+		 	 								 .MandatoryInputVal							{
+		 	 								 	border: 1px solid red;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: normal;
+		 	 								 	color :black;
+		 	 								 }
+
+
+
+
+		 	 								 /* for readonly input values*/
+		 	 								 .readOnlyText						{
+		 	 								 	border:none;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :#993300;
+		 	 								 	background-color: transparent;
+		 	 								 }
+
+
+		 	 								 .readOnlyvalue						{
+
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :#993300;
+		 	 								 	background-color: transparent;
+		 	 								 }
+		 	 								 /* for readonly input right align values*/
+		 	 								 .readOnlyRText						{
+		 	 								 	border:none;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :#993300;
+		 	 								 	background-color: transparent;
+		 	 								 	text-align:right;
+		 	 								 }
+		 	 								 /* for display of Lable   (RawText)*/
+		 	 								 .LableText							{
+		 	 								 	border:none;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 	color :#993300;
+		 	 								 }
+		 	 								 /* for display of Lable Values(Value of The lables can be magic tags but no variables attached) */
+		 	 								 .LableVal							{
+		 	 								 	border:none;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :black;
+		 	 								 }
+
+		 	 								 /*for combos to show the desired font& color inside*/
+		 	 								 select								{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+												color :#003399;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 }
+
+		 	 								 /*for combos to show the desired font& color inside*/
+		 	 								 .select								{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :#003399;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 }
+		 	 								 .select_required								{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :red;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 }
+
+		 	 								 .hiliteRow								{
+		 	 								 	background-color:silver;
+
+		 	 								 }
+		 	 								 .normalRow								{
+		 	 								 	background-color:#ffffff;
+
+		 	 								 }
+
+		 	 								 .button										{
+											 /*
+		 	 								 	background-color:#EEF3FB;
+		 	 								 	color:#003366;
+		 	 								 	border-collapse: collapse;
+		 	 								 	border-left: solid 2px #FFFFFF; border-top: solid 2px #FFFFFF; border-right: solid 2px #7694C8; border-bottom: solid 2px #7694C8;
+		 	 								 	width:90px;
+		 	 								 	height:20px;
+		 	 								 	font-size: 7pt;
+		 	 								 	font-weight:bold;
+		 	 								 	cursor: hand;
+												*/
+												width:90px;
+		 	 								 	height:20px;
+												font-family: Arial, Helvetica, sans-serif;
+												font-size: 11px;
+												color: #000000;
+												border: 1px solid #000000;
+		 	 								 }
+		 	 								 .button1										{
+		 	 								 	background-color:#EEF3FB;
+		 	 								 	color:#003366;
+		 	 								 	text-align: center;
+		 	 								 	border-collapse: collapse;
+		 	 								 	border-left: solid 2px #FFFFFF; border-top: solid 2px #FFFFFF; border-right: solid 2px #7694C8; border-bottom: solid 2px #7694C8;
+		 	 								 	width:130px;
+		 	 								 	height:20px;
+		 	 								 	font-size: 7pt;
+		 	 								 	font-weight:bold;
+		 	 								 	cursor: hand;
+		 	 								 }
+		 	 								 .button2										{
+		 	 								 	background-color:#EEF3FB;
+		 	 								 	color:#003366;
+		 	 								 	text-align: center;
+		 	 								 	border-collapse: collapse;
+		 	 								 	border-left: solid 2px #FFFFFF; border-top: solid 2px #FFFFFF; border-right: solid 2px #7694C8; border-bottom: solid 2px #7694C8;
+		 	 								 	width:170px;
+		 	 								 	height:20px;
+		 	 								 	font-size: 7pt;
+		 	 								 	font-weight:bold;
+		 	 								 	cursor: hand;
+		 	 								 }
+		 	 								 .button3									{
+		 	 								 	background-color:#003366;
+		 	 								 	color:white;
+		 	 								 	text-align: center;
+		 	 								 	border-collapse: collapse;
+		 	 								 	border-left: solid 2px #FFFFFF;
+		 	 								 	border-top: solid 2px #FFFFFF;
+		 	 								 	border-right: solid 2px #7694C8;
+		 	 								 	border-bottom: solid 2px #7694C8;
+		 	 								 	width:80px;
+		 	 								 	height:20px;
+		 	 								 	font-size: 7pt;
+		 	 								 	font-weight: bold;
+		 	 								 	cursor: hand;
+		 	 								 }
+
+		 	 								 .zbutton										{
+		 	 								 	background-color: #EEF3FB;
+		 	 								 	color:black;
+		 	 								 	text-align: top;
+		 	 								 	border-collapse: collapse;
+		 	 								 	border-left: solid 2px #FFFFFF; border-top: solid 2px #FFFFFF; border-right: solid 2px #7694C8; border-bottom: solid 2px #7694C8;
+		 	 								 	cursor: hand;
+		 	 								 	height:20px;
+		 	 								 	font-size: 7pt;
+
+		 	 								 }
+
+
+		 	 								 .disabledButton										{
+		 	 								 	background-color:gray;
+		 	 								 	color:white;
+		 	 								 	border-collapse: collapse;
+		 	 								 	border: 1px solid #003366;
+		 	 								 }
+		 	 								 hr									{
+		 	 								 	color:#003399;
+		 	 								 	border: 1px solid #003366;
+		 	 								 	height:1px;
+		 	 								 }
+
+
+		 	 								 /* for bold service */
+		 	 								 .boldService	{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color : black;
+		 	 								 	font-size: 8pt;
+		 	 								 	font-weight: bold;
+		 	 								 	text-decoration : underline;
+		 	 								 }
+
+
+		 	 								 /* for display of error messages */
+		 	 								 .error				{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :red;
+		 	 								 	font-size: 10pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 	text-indent :5px;
+		 	 								 }
+
+		 	 								 /* for display of Information messages */
+		 	 								 .info				{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :red;
+		 	 								 	font-size: 10pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 	text-indent :5px;
+		 	 								 }
+
+
+		 	 								 .about			{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :#003399;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 	text-indent :5px;
+		 	 								 }
+
+
+
+		 	 								 /* for the data in picklists or query result  screens*/
+
+		 	 								 .ListData				{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :black;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: normal;
+		 	 								 	text-indent :2px;
+		 	 								 }
+
+		 	 								 .InpNameVar			 	 		{
+		 	 								 	border:none;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 8pt;
+		 	 								 	font-weight:bolder;
+		 	 								 	color :#003399;
+		 	 								 }
+		 	 								 .ListSmallData				{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :black;
+		 	 								 	font-size:8pt;
+		 	 								 	font-weight: normal;
+		 	 								 	text-indent :2px;
+												text-align: left;
+		 	 								 }
+
+		 	 								 .ListHeader								{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	color :#ffffff;
+		 	 								 	background-color:#003366;
+		 	 								 	font-size: 7pt;
+		 	 								 	font-weight: Bolder;
+		 	 								 	text-align: center;
+		 	 								 	text-indent :5px;
+		 	 								 }
+
+		 	 								 table.sortable a.sortheader {
+		 	 								 	background:	ButtonFace;
+		 	 								 	background-color:#DEDEDC;
+												color:darkblue;
+												font-size: 8pt;
+		 	 								 	font-weight: bold;
+		 	 								 	text-decoration: none;
+		 	 								 	display: block;
+
+		 	 								 }
+		 	 								 table.sortable span.sortarrow {
+		 	 								 	background-color:#DEDEDC;
+		 	 								 	color: #000000;
+		 	 								 	text-decoration: none;
+		 	 								 	font:Icon;
+		 	
+		 	 								 	zoom : 100%;
+		 	 								 }
+
+
+
+		 	 								 table.sortable				  					{
+		 	 								 	border-collapse: collapse;
+		 	 								 	border: 1px solid #003366;
+		 	 								 }
+											 .InputName				 	 				{
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 7.4pt;
+		 	 								 	font-weight:bolder;
+		 	 								 	color :#003399;
+		 	 								 }
+											 .QALabel
+											 {
+												font-family: Arial, Helvetica, sans-serif;
+												font-size: 11px;
+												color: #000000;
+											 }
+											 .readOnlyTextQA						{
+		 	 								 	border:none;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 8pt;
+		 	 								 	color :#993300;
+		 	 								 	background-color: transparent;
+		 	 								 }
+											 	.InpValQA									 {
+		 	 								 	border: 1px solid black;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: normal;
+		 	 								 	color :black;
+		 	 								 }
+ 		 	 								 .buttonQA										
+											 {
+												font-family: Arial, Helvetica, sans-serif;
+												font-size: 11px;
+												color: #000000;
+												border: 1px solid #000000;
+		 	 								 	width:50px;
+		 	 								 	height:18px;
+  	 	 								 	cursor: hand;
+		 	 								 }
+											   .evenRow {background:#ccc}
+.menuDivider {
+	font:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+	vertical-align: middle;
+	background-image: url(/static/Images94/menuWindow/main_menu_bg.jpg);
+	background-repeat:repeat;
+}
+
+.menuHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	vertical-align: middle;
+	background-image: url(/static/Images94/menuWindow/menu_header_bg.jpg);
+	background-repeat: repeat;
+}
+.menuEntry {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-image: url(/static/Images94/menuWindow/menu_bg.jpg);
+	background-repeat: repeat;
+}
+
+/* Top Bar styles */
+
+.topBarDate {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-image: url(/static/Images94/topBar/top_bar_bg.jpg);
+	background-repeat: repeat;
+	border: 0px;
+	text-align: right;
+}
+
+.topBarLinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+	background-image: url(/static/Images94/topBar/top_bar_links_frame.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.carProLogo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+}
+
+/* Main Window Styles */
+
+.windowHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.windowRightHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+
+
+.screenHeader{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	vertical-align: middle;
+	background-image: url(/static/Images94/mainWindow/screen_header_bg.jpg);
+	background-repeat: repeat;
+}
+
+.screenOddRow{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+}
+
+.screenEvenRow{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	background-image: url(/static/Images94/mainWindow/window_grey_bg.jpg);
+}
+
+.screenHighlightRow{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	background-image: url(/static/Images94/mainWindow/screen_highlight_bg.jpg);
+}
+
+/* Form Styles */
+
+.textInputField {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border: 1px solid #8297C4;
+}
+
+.readOnly_textInputField {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: left;
+	border: 1px solid #8297C4;
+	background-color: #E8E8E8;
+}
+
+.readOnly_textInputFieldsmall {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-align: left;
+	border: 1px solid #8297C4;
+	background-color: #E8E8E8;
+}
+
+.selectField{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: right;
+	border: 1px solid #8297C4;
+}
+
+.readOnly_selectField {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: left;
+	border: 1px solid #BBCCDE;
+	background-color: #E8E8E8;
+}
+
+.buttonGeneral{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border: 1px solid #000000;
+}
+
+
+/* Table Border Styles */
+
+.bottomBlueBorder{
+	border-bottom: thin solid #BBCCDE;
+}
+
+.leftBlueBorder{
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #BBCCDE;
+}
+
+.leftBottomBlueBorder{
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #BBCCDE;
+	border-left-color: #BBCCDE;
+}
+
+/* Quick Access Styles */
+
+
+.qAccessCriteria {
+	background-image: url(/static/Images94/QuickAccess/light_blue_bg.jpg);
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: 0px;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #C1C1C1;
+	border-right-color: #C1C1C1;
+	border-left-color: #C1C1C1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.qAccessDetails {
+	background-image: url(/static/Images94/QuickAccess/light_blue_bg.jpg);
+	border-bottom-width: thin;
+	border-right-width: thin;
+	border-top-width: 0px;
+	border-left-width: thin;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #C1C1C1;
+	border-right-color: #C1C1C1;
+	border-left-color: #C1C1C1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.qAccessTable {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border: thin solid #C1C1C1;
+}
+
+.qAccessTableHdr {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #DEDEDC;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.qAccessTableOddRow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #f7f7f7;/*#DEDEDC;*/
+	text-align: left;
+	vertical-align: middle;
+}
+
+.qAccessTableEvenRow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.qAccessTableSelectedRow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #8297C4;
+	text-align: right;
+	vertical-align: middle;
+}
+.bottomGreyBorder{
+	border-bottom: thin solid  #C1C1C1;
+}
+		 	 								 .selectVal								{
+		 	 								 	font-family : Arial, sans-serif;
+												color :#000000;
+		 	 								 	font-size: 8pt;
+							 	
+		 	 								 }
+ 		 	 								 .DisplayName		{Same as Inpname  only color is black*/
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 8pt;
+		 	 								 	font-weight:bolder;
+		 	 								 	color :#000000;
+		 	 								 }
+											 .DisplayValue
+											 {
+											 font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :#000000;
+												text-align:right;
+												}
+												.ReadonlyRValQA									 {
+		 	 								 	border: none;
+												BACKGROUND-COLOR: transparent;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: normal;
+		 	 								 	color :black;
+		 	 								 	text-align:right;
+		 								 }
+											 .DisplayName		{/* Same as Inpname  only color is black   */
+    	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	font-weight: bolder;
+		 	 								 	color :#000000;
+		 	 								 }		 	 					
+
+											 .DisplayName1		{/* Same as Inpname  only color is black And font is normal not bold */
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :#003399;
+		 	 								 }	
+											  .DisplayName1		{/* Same as Inpname  only color is black And font is normal not bold */
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :#003399;
+		 	 								 }
+
+ 		 	 								 .DisplayReadOnlyText						{
+		 	 								 	border:none;
+		 	 								 	font-family : Arial, Helvetica, sans-serif;
+												font-weight:bolder;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :black;
+		 	 								 	background-color: transparent;
+		 	 								 }
+											 .Tablebox				{
+		 	 								 	border-collapse: collapse;
+												font-family: Arial, Helvetica, sans-serif;
+												font-size: 11px;
+												color: #000000;
+												border: thin solid #C1C1C1;
+ 		 	 									background-color:#efefef
+		 	 								 }			 
+ 		 	 								 .MandatoryTextInputVal							{
+											 	font-family: Arial, Helvetica, sans-serif;
+												font-size: 11px;
+												color: #000000;
+												border: 1px solid red;
+		 	 								 }
+											 .Button5{
+												    font-size:7pt;
+												   font-weight:bold;
+												   color:#FFFFFF; 
+												   background-color:#fed;
+												   border:1px solid;
+												   border-top-color:#696;
+												   border-left-color:#696;
+												   border-right-color:#363;
+												   border-bottom-color:#363;
+													  width:160px;
+		 	 										height:20px;
+												   filter:progid:DXImageTransform.Microsoft.Gradient
+													   ( (GradientType=0,StartColorStr='#8297c4', EndColorStr='#8297c4');}}
+											.Button6{
+												   font-size:7pt;
+												   font-weight:bold;
+												   color:#FFFFFF; 
+												   background-color:#fed;
+												   border:1px solid;
+												   border-top-color:#696;
+												   border-left-color:#696;
+												   border-right-color:#363;
+												   border-bottom-color:#363;
+													  width:140px;
+		 	 										height:20px;
+												   filter:progid:DXImageTransform.Microsoft.Gradient
+													   ( (GradientType=0,StartColorStr='#8297c4', EndColorStr='#8297c4');}}
+										fieldset	{ padding-left: 2pt; padding-right: 2pt; padding-top: 2pt; padding-bottom: 2pt; margin: 0pt 1pt 0pt 2pt; border: 2px solid #003399 }
+										legend		{ font-size: 14px; color:#003399; font-weight:bold; font-family:'trebuchet ms',helvetica,sans-serif; }
+
+.testbox					  					{
+		 	 								 	border-collapse: collapse;
+		 	 								 	border: none;
+		 	 								 }
+
+
+
+
+
+/*
+Menu related selectors
+*/
+.jsdomenudiv {
+	background-color:menu;
+	border: 2px outset;
+	border-bottom-color: #000000;
+	border-left-color: #FFFFFF;
+	border-right-color: #000000;
+	border-top-color: #FFFFFF;
+	cursor: default;
+	position: absolute; /* Do not alter this line! */
+	visibility: hidden;
+	z-index: 10;
+}
+
+.jsdomenuitem {
+	background-color: transparent;
+	border: none;
+	color: #000000;
+	font-size: 11px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	position: relative; /* Do not alter this line! */
+}
+
+.jsdomenuitemover {
+	background-color: #000099;
+	border: none;
+	color: #FFFFFF;
+	font-size: 11px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	position: relative; /* Do not alter this line! */
+}
+
+.jsdomenuarrow {
+	background-image: url(/static/Images94/classic_arrow.png);
+	background-repeat: no-repeat; /* Do not alter this line! */
+	height: 7px;
+	position: absolute; /* Do not alter this line! */
+	right: 8px;
+	width: 4px;
+}
+
+.jsdomenuarrowover {
+	background-image: url(/static/Images94/classic_arrow_o.png);
+	background-repeat: no-repeat; /* Do not alter this line! */
+	height: 7px;
+	position: absolute; /* Do not alter this line! */
+	right: 8px;
+	width: 4px;
+}
+
+.jsdomenusep {
+}
+
+.jsdomenusep hr {
+	text-align: center;
+	width: 95%;
+}
+
+/*
+Menu bar related selectors
+*/
+.jsdomenubardiv {
+	background-color: #CCCCCC;
+	background-image: url(/static/Images94/classic_divider.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	border: 2px outset;
+	border-bottom-color: #000000;
+	border-left-color: #FFFFFF;
+	border-right-color: #000000;
+	border-top-color: #FFFFFF;
+	cursor: default;
+	padding-bottom: 3px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 3px;
+	position: absolute; /* Do not alter this line! */
+	visibility: visible;
+}
+
+.jsdomenubardragdiv {
+	cursor: move;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	position: relative; /* Do not alter this line! */
+	visibility: hidden;
+	width: 9px;
+}
+
+.jsdomenubaritem {
+	background-color: #CCCCCC;
+	border: none;
+	color: #000000;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+	padding-bottom: 2px;
+	padding-left: 22px;
+	padding-right: 10px;
+	padding-top: 2px;
+	position: relative; /* Do not alter this line! */
+}
+
+.jsdomenubaritemover {
+	background-color: #CCCCCC;
+	border: 1px outset;
+	color: #000000;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+	padding-bottom: 2px;
+	padding-left: 21px;
+	padding-right: 9px;
+	padding-top: 2px;
+	position: relative; /* Do not alter this line! */
+}
+
+.jsdomenubaritemclick {
+	background-color: #000099;
+	border: 1px solid #000099;
+	color: #FFFFFF;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+	padding-bottom: 2px;
+	padding-left: 21px;
+	padding-right: 9px;
+	padding-top: 2px;
+	position: relative; /* Do not alter this line! */
+}
+
+/*
+Example of selectors for icons. Change the height and width to match the actual 
+height and width of the icon image.
+*/
+.icon1 {
+	background-image: url(/static/Images94/icon1.png);
+	background-repeat: no-repeat; /* Do not alter this line! */
+	height: 16px;
+	left: 2px;
+	position: absolute; /* Do not alter this line! */
+	width: 16px;
+}
+
+.icon2 {
+	background-image: url(/static/Images94/icon2.png);
+	background-repeat: no-repeat; /* Do not alter this line! */
+	height: 16px;
+	left: 2px;
+	position: absolute; /* Do not alter this line! */
+	width: 16px;
+}
+
+.icon3 {
+	background-image: url(/static/Images94/icon3.png);
+	background-repeat: no-repeat; /* Do not alter this line! */
+	height: 16px;
+	left: 2px;
+	position: absolute; /* Do not alter this line! */
+	width: 16px;
+}
+			
+.disable{
+	background-color: transparent;
+	border: none;
+	color: #808080;
+	font-size: 11px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	position: relative; /* Do not alter this line! */
+}
+		 	 	
+		 	 			
+.LightGrayBox
+{
+ background-color: #efefef;
+}
+
+.GrayBoxborder
+{
+ background-color: #efefef;
+  padding-left: 5pt;
+  padding-right: 2pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  margin: 0pt 2pt 0pt 2pt;
+  border: 2px solid #003399
+}
+
+table.Dyntable a.theader {
+		 	 							
+		 	 								 	background-color:#efefef;
+												color:darkblue;
+												font-size: 8pt;
+		 	 								 	font-weight: bold;
+		 	 								 	text-decoration: none;
+		 	 								 	display: block;
+												
+		 	 								 }
+		 	 								
+
+table.Dyntable				  					
+{
+		 	 								 
+		 	 								 	border: 1px solid #003366;
+												font-family : Arial, Helvetica, sans-serif;
+		 	 								 	font-size: 9pt;
+		 	 								 	color :#003399;
+												
+}
+
+
+
+
+.LightGrayBoxFooter
+{
+ background-color: #fbf9f9;
+}						
+
+.WindowTitle
+{
+									 				font-family : Comic sans;
+		 	 								 	font-size: 16pt;
+		 	 								 	font-weight:bolder;
+		 	 								 	color :#d5d5d5;
+}														
+
+table.sortable1 a.sortheader {
+		 	 								 	background:	ButtonFace;
+		 	 								 	background-color:#DEDEDC;
+												color:darkblue;
+												font-size: 8pt;
+		 	 								 	font-weight: bold;
+		 	 								 	text-decoration: none;
+		 	 								 	display: block;
+
+		 	 								 }
+		 	 								 table.sortable1 span.sortarrow {
+		 	 								 	background-color:#DEDEDC;
+		 	 								 	color: #000000;
+		 	 								 	text-decoration: none;
+		 	 								 	font:Icon;
+		 	
+		 	 								 	zoom : 100%;
+		 	 								 }
+
+
+
+		 	 								 table.sortable1				  					{
+		 	 								 	border-collapse: collapse;
+		 	 								 	border: 1px solid #003366;
+		 	 								 }
+
+
+
+											 -->
+
+#tableAlternate {    background: url("/static/Images94/alernatebg.png ");  border: 1px solid #cacaca;    border-width: 0 1px 1px 1px;  } 
+#tableAlternate td {    height: 25px;   padding-left: 5px;    padding-right: 5px;  }
+</style>

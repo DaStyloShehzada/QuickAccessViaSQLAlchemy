@@ -1,0 +1,1517 @@
+<style type="text/css">
+BODY
+{
+    SCROLLBAR-FACE-COLOR: #efefef;
+    MARGIN: 3px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+    SCROLLBAR-SHADOW-COLOR: #dfdfdf;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    scrollbar-3d-light-color: #EFEFEF;
+    scrollbar-dark-shadow-color: #3D3D3D
+}
+H1
+{
+    FONT-SIZE: 150%;
+    MARGIN: 1em 0px 1em 1%;
+    COLOR: #993300;
+    FONT-FAMILY: Arial, Verdana, Helvetica
+}
+H2
+{
+    FONT-SIZE: 120%;
+    MARGIN: 1em 0px 1em 1%;
+    COLOR: #993300;
+    FONT-FAMILY: Arial, Verdana, Helvetica
+}
+.H2 /*commented bcoz of chrome nd mozilla*/
+{
+    /*BORDER-RIGHT: medium none;*/
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    MARGIN: 1em 0px 1em 1%;
+    BORDER-LEFT: medium none;
+    COLOR: #993300;
+    /*TEXT-INDENT: 3pt;
+    BORDER-BOTTOM: medium none;*/
+    FONT-FAMILY: Arial, Verdana, Helvetica
+}
+H3
+{
+    FONT-SIZE: 90%;
+    MARGIN-LEFT: 1%;
+    COLOR: #993300;
+    FONT-FAMILY: Arial, Verdana, Helvetica
+}
+H4
+{
+    FONT-SIZE: 90%;
+    MARGIN-LEFT: 1%;
+    COLOR: #993300;
+    FONT-FAMILY: Arial, Verdana, Helvetica
+}
+H5
+{
+    FONT-SIZE: 90%;
+    MARGIN-LEFT: 1%;
+    COLOR: #993300;
+    FONT-FAMILY: Arial, Verdana, Helvetica
+}
+A
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: 0px;
+    COLOR: #003399;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.Link
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: 0px;
+    COLOR: blue;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+A:hover.Link
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: 0px;
+    COLOR: lightblue;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+A:active.Link
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: 0px;
+    COLOR: lightblue;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+A:visited.Link
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: 0px;
+    COLOR: #003399;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+
+A:hover
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: 0px;
+    COLOR: black;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+A:active
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: 0px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A.disable:hover
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: 0px;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.MandatoryTextInputValNr
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+		BORDER-LEFT: red 1px solid;
+		BORDER-BOTTOM: red 1px solid;
+    FONT-SIZE: 11px;
+    WIDTH: 35px;
+    COLOR: #000000;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+	PADDING:1px;
+}
+.MandatoryTextInputValMd
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.MandatoryTextInputValMdUP
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+		text-transform: uppercase;
+}
+.MandatoryTextInputValLG
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.MandatoryTextInputValLr
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.MandatoryTextInputVal_AmtNr
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right;
+	PADDING:1px;
+}
+.MandatoryTextInputVal_AmtMd
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.MandatoryTextInputVal_AmtLG
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.MandatoryTextInputVal_AmtLr
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.textInputFieldNr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+	PADDING:1px;
+}
+.textInputFieldMd
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.textInputFieldLr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.textInputFieldLG
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+.textInputFieldNrUP
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+	PADDING:1px;
+	text-transform: uppercase;
+}
+.textInputFieldMdUP
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.textInputFieldLrUP
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+}
+.textInputFieldLGUP
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+.textInputField_AmtNr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right;
+	PADDING:1px;
+}
+.textInputField_AmtMd
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.textInputField_AmtLr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.textInputField_AmtLG
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.readOnly_textInputFieldNr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+	PADDING:1px;
+}
+.readOnly_textInputFieldMd
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8
+}
+.readOnly_textInputFieldLr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8
+}
+.readOnly_textInputFieldLG
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8
+}
+.readOnly_textInputFieldExLg
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 250px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8
+}
+.readOnly_textInputField_AmtNr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+    TEXT-ALIGN: right;
+	PADDING:1px;
+}
+.readOnly_textInputField_AmtMd
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+    TEXT-ALIGN: right
+}
+.readOnly_textInputField_AmtLr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+    TEXT-ALIGN: right
+}
+.readOnly_textInputField_AmtLG
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+    TEXT-ALIGN: right
+}
+.textInputFieldsmallNr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left;
+	PADDING:1px;
+}
+.textInputFieldsmallMd
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.textInputFieldsmallLr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.rtextInputFieldsmallLG
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.readOnly_textInputFieldsmallNr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+    TEXT-ALIGN: left;
+	PADDING:1px;
+}
+.readOnly_textInputFieldsmallMd
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+    TEXT-ALIGN: left
+}
+.readOnly_textInputFieldsmallLr
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+    TEXT-ALIGN: left
+}
+.readOnly_textInputFieldsmallLG
+{
+    BORDER-RIGHT: #8297c4 1px solid;
+    BORDER-TOP: #8297c4 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #8297c4 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8297c4 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #e8e8e8;
+    TEXT-ALIGN: left
+}
+.tran_textInputFieldNr
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: transparent;
+	PADDING:1px;
+}
+.tran_textInputFieldMd
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: transparent
+}
+.tran_textInputFieldLr
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: transparent
+}
+.tran_textInputFieldLG
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: transparent
+}
+.tran_textInputField_AmtNr
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    WIDTH: 35px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: transparent;
+    TEXT-ALIGN: right;
+	PADDING:1px;
+}
+.tran_textInputField_AmtMd
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    WIDTH: 60px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: transparent;
+    TEXT-ALIGN: right
+}
+.tran_textInputField_AmtLr
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: transparent;
+    TEXT-ALIGN: right
+}
+.tran_textInputField_AmtLG
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: transparent;
+    TEXT-ALIGN: right
+}
+.tran_td_AmtLr
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 0px;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.textInputField_CmbNr
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 7.4pt;
+    WIDTH: 35px;
+    COLOR: #003399;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.textInputField_CmbMd
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 7.4pt;
+    WIDTH: 60px;
+    COLOR: #003399;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.textInputField_CmbLr
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 7.4pt;
+    WIDTH: 90px;
+    COLOR: #003399;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.textInputField_CmbLG
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 7.4pt;
+    WIDTH: 120px;
+    COLOR: #003399;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.Mandatory_CmbNr
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 7.4pt;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 35px;
+    COLOR: red;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.Mandatory_CmbMd
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 7.4pt;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 60px;
+    COLOR: red;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.Mandatory_CmbLr
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 7.4pt;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 90px;
+    COLOR: red;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.Mandatory_CmbLG
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 7.4pt;
+    BORDER-LEFT: red 1px solid;
+    WIDTH: 120px;
+    COLOR: red;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.zbuttonTp1
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 12px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.buttonNrTp1
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 40px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.buttonMdTp1
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 80px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.buttonLrTp1
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.buttonLgTp1
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 160px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.buttonNrTp2
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 40px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: #003366;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #eef3fb;
+    TEXT-ALIGN: center
+}
+.buttonMdTp2
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 80px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: #003366;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #eef3fb;
+    TEXT-ALIGN: center
+}
+.buttonLrTp2
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 120px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: #003366;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #eef3fb;
+    TEXT-ALIGN: center
+}
+.buttonLgTp2
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 160px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: #003366;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #eef3fb;
+    TEXT-ALIGN: center
+}
+.buttonNrTp3
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 40px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: white;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #003366;
+    TEXT-ALIGN: center
+}
+.buttonMdTp3
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 80px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: white;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #003366;
+    TEXT-ALIGN: center
+}
+.buttonLrTp3
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 120px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: white;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #003366;
+    TEXT-ALIGN: center
+}
+.buttonLgTp3
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 160px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: white;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #003366;
+    TEXT-ALIGN: center
+}
+.zbutton
+{
+    BORDER-RIGHT: #7694c8 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    FONT-SIZE: 7pt;
+    BORDER-LEFT: #ffffff 2px solid;
+    CURSOR: hand;
+    CURSOR: pointer;
+    COLOR: black;
+    BORDER-BOTTOM: #7694c8 2px solid;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px;
+	WIDTH : 15px;
+    BACKGROUND-COLOR: #eef3fb;
+	TEXT-ALIGN: Left
+}
+.disabledButton
+{
+    BORDER-RIGHT: #003366 1px solid;
+    BORDER-TOP: #003366 1px solid;
+    BORDER-LEFT: #003366 1px solid;
+    COLOR: white;
+    BORDER-BOTTOM: #003366 1px solid;
+    BORDER-COLLAPSE: collapse;
+    BACKGROUND-COLOR: gray
+}
+.buttonNrTp4
+{
+    BORDER-RIGHT: #363 1px solid;
+    BORDER-TOP: #696 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient
+			 (GradientType=0,StartColorStr='#8297c4', EndColorStr='#8297c4');
+    BORDER-LEFT: #696 1px solid;
+    WIDTH: 40px;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #363 1px solid;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #8297c4
+}
+.buttonMdTp4
+{
+    BORDER-RIGHT: #363 1px solid;
+    BORDER-TOP: #696 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient
+			(GradientType=0,StartColorStr='#8297c4', EndColorStr='#8297c4');
+    BORDER-LEFT: #696 1px solid;
+    WIDTH: 80px;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #363 1px solid;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #8297c4
+}
+.buttonLrTp4
+{
+    BORDER-RIGHT: #363 1px solid;
+    BORDER-TOP: #696 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient
+			 (GradientType=0,StartColorStr='#8297c4', EndColorStr='#8297c4');
+    BORDER-LEFT: #696 1px solid;
+    WIDTH: 120px;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #363 1px solid;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #8297c4;
+	CURSOR: hand;
+    CURSOR: pointer;
+}
+.buttonLgTp4
+{
+    BORDER-RIGHT: #363 1px solid;
+    BORDER-TOP: #696 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient
+			 (GradientType=0,StartColorStr='#8297c4', EndColorStr='#8297c4');
+    BORDER-LEFT: #696 1px solid;
+    WIDTH: 160px;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #363 1px solid;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #8297c4
+}
+.buttonNrTp5
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 40px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.buttonMdTp5
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 80px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.buttonLrTp5
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 120px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.buttonLgTp5
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 160px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.LabelNr
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.LabelHd
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.LabelTot
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: #003399;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.qAccessCriteria
+{
+    BORDER-RIGHT: #c1c1c1 thin solid;
+    BORDER-TOP: #c1c1c1 thin solid;
+    FONT-SIZE: 11px;
+    BACKGROUND-IMAGE: url(/static/Images94/QuickAccess/light_blue_bg.jpg);
+    BORDER-LEFT: #c1c1c1 thin solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: 0px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.qAccessDetails
+{
+    BORDER-TOP-WIDTH: 0px;
+    BORDER-RIGHT: #c1c1c1 thin solid;
+    FONT-SIZE: 11px;
+    BACKGROUND-IMAGE: url(/static/Images94/QuickAccess/light_blue_bg.jpg);
+    BORDER-LEFT: #c1c1c1 thin solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: #c1c1c1 thin solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.qAccessTable
+{
+    BORDER-RIGHT: #c1c1c1 thin solid;
+    BORDER-TOP: #c1c1c1 thin solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #c1c1c1 thin solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: #c1c1c1 thin solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.qAccessTableHdr
+{
+    FONT-SIZE: 11px;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #dededc;
+    TEXT-ALIGN: center
+}
+.qAccessTableOddRow
+{
+    FONT-SIZE: 11px;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #f7f7f7;
+    TEXT-ALIGN: left
+}
+.qAccessTableEvenRow
+{
+    FONT-SIZE: 11px;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: left
+}
+.qAccessTableSelectedRow
+{
+    FONT-SIZE: 11px;
+    VERTICAL-ALIGN: middle;
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #8297c4;
+    TEXT-ALIGN: right
+}
+.box
+{
+    BORDER-RIGHT: #003366 1px solid;
+    PADDING-RIGHT: 2px;
+    BORDER-TOP: #003366 1px solid;
+    PADDING-LEFT: 2px;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #003366 1px solid;
+    COLOR: #003399;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #003366 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BORDER-COLLAPSE: collapse
+}
+TABLE#box TD
+{
+    BORDER-RIGHT: white 1px solid;
+    PADDING-RIGHT: 2px;
+    BORDER-TOP: white 1px solid;
+    PADDING-LEFT: 2px;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: white 1px solid;
+    COLOR: #003399;
+    TEXT-INDENT: 3pt;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: white 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BORDER-COLLAPSE: collapse
+}
+TABLE#NesBox TD
+{
+    BORDER-RIGHT: white 1px solid;
+    BORDER-TOP: 0px;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: white 1px solid;
+    COLOR: #003399;
+    TEXT-INDENT: 3pt;
+    BORDER-BOTTOM: white 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BORDER-COLLAPSE: collapse
+}
+.ZeroBNesBox
+{
+    BORDER-RIGHT: 0px;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    BORDER-LEFT: 0px;
+    TEXT-INDENT: 0pt;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 0px
+}
+.Tablebox
+{
+    BORDER-RIGHT: #c1c1c1 thin solid;
+    BORDER-TOP: #c1c1c1 thin solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #c1c1c1 thin solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: #c1c1c1 thin solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BORDER-COLLAPSE: collapse;
+    BACKGROUND-COLOR: #efefef
+}
+TABLE.sortable A.sortheader
+{
+    DISPLAY: block;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BACKGROUND: #dededc;
+    COLOR: darkblue;
+    TEXT-DECORATION: none
+}
+TABLE.sortable SPAN.sortarrow
+{
+    FONT: Icon;
+    COLOR: #000000;
+    ZOOM: 100%;
+    BACKGROUND-COLOR: #dededc;
+    TEXT-DECORATION: none
+}
+TABLE.sortable
+{
+    BORDER-RIGHT: #003366 1px solid;
+    BORDER-TOP: #003366 1px solid;
+    BORDER-LEFT: #003366 1px solid;
+    BORDER-BOTTOM: #003366 1px solid;
+    BORDER-COLLAPSE: collapse
+}
+ .sortable tr:hover {
+          background-color: #BEC5DE;
+    }
+.Reportbox
+{
+    BORDER-RIGHT: #003366 1px solid;
+    BORDER-TOP: #003366 1px solid;
+    BORDER-LEFT: #003366 1px solid;
+    BORDER-BOTTOM: #003366 1px solid;
+    BORDER-COLLAPSE: collapse
+}
+.Reportbox TH
+{
+    DISPLAY: block;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BACKGROUND: #dededc;
+    COLOR: darkblue;
+    TEXT-DECORATION: none
+}
+.groupFooterRow
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    BACKGROUND-COLOR: #e6e6e6
+}
+.footerRow
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    BACKGROUND-COLOR: #c9c9c9
+}
+.detailRow
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    COLOR: black
+}
+.headerRow
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #eef3fb
+}
+.groupHeaderRow
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: black
+}
+.LightGrayBox
+{
+    BACKGROUND-COLOR: #efefef
+}
+.LightBlueBox
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #bbccde
+}
+.LeftCorner
+{
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/window_top_left_corner.jpg);
+    WIDTH: 18px;
+    HEIGHT: 39px
+}
+.MainHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/window_header_bg.jpg);
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 39px
+}
+.LeftBorder
+{
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/window_left_border.jpg);
+    WIDTH: 18px
+}
+.RightBorder
+{
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/window_right_border.jpg);
+    WIDTH: 18px
+}
+.BottomLeftCorner
+{
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/window_bottom_left_corner.jpg);
+    WIDTH: 18px
+}
+.BottomBorder
+{
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/window_bottom_border.jpg)
+}
+.BottomRightCorner
+{
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/window_bottom_right_corner.jpg);
+    WIDTH: 18px;
+    HEIGHT: 18px
+}
+.NormalImgRightCorner
+{
+    BACKGROUND-IMAGE: url(/static/Images94/Dashboard/tab_header.jpg);
+    WIDTH: 100%;
+    BACKGROUND-REPEAT: no-repeat;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #dededc
+}
+.NormalSmImgRightCorner
+{
+    BACKGROUND-IMAGE: url(/static/Images94/Dashboard/tab_header_todo.jpg);
+    WIDTH: 100%;
+    BACKGROUND-REPEAT: no-repeat;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #dededc
+}
+IMG
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    CURSOR: hand;
+    CURSOR: pointer;
+    BORDER-BOTTOM: 0px
+}
+.windowHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.windowRightHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.screenHeader
+{
+    FONT-SIZE: 11px;
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/screen_header_bg.jpg);
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.screenOddRow
+{
+    FONT-SIZE: 11px;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ffffff
+}
+.screenEvenRow
+{
+    FONT-SIZE: 11px;
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/window_grey_bg.jpg);
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ffffff
+}
+.screenHighlightRow
+{
+    FONT-SIZE: 11px;
+    BACKGROUND-IMAGE: url(/static/Images94/mainWindow/screen_highlight_bg.jpg);
+    VERTICAL-ALIGN: middle;
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ffffff
+}
+.disabledLink
+{
+color: #030303;
+text-decoration : none;
+cursor: default;
+}
+input[type="button"]:disabled
+{
+background:#dddddd;
+}
+
+</STYLE>

@@ -1,0 +1,409 @@
+<html>
+<head>
+<title>|^User Information^|</title>
+<!--
+Template path : templates\NewQuickAccess.htm
+Author : Prem Shah
+Purpose : Search User Records.
+-->
+
+<meta http-equiv="Pragma" content="no-cache">
+<link rel="stylesheet" type="text/css" href="/static/GenScripts94/qa.css" title="styles">
+<script language="JavaScript" src="/static/GenScripts94/calendar.js"></script>
+<script language="JavaScript" src="/static/GenScripts94/settings.js"></script>
+<script language="javascript" src="/static/GenScripts94/GenFunctions.js"></script>
+<script language="JavaScript" src="/static/GenScripts94/DateFunctions.js"></script>
+<script language="JavaScript" src="/static/GenScripts94/contextmenu.js"></script>
+<style type="text/css">
+<!--
+a{
+color:darkblue
+}
+a:visited {
+			font-family: Arial, Helvetica, sans-serif;
+			color: darkblue;
+			border: 0px none;
+		}
+-->
+</style>
+<script language="JavaScript" type="text/javascript">
+function temp()
+{
+
+}
+
+function HideDetailsTab()
+{
+document.all.DetailsShow.style.display="None";
+document.all.DetailsHide.style.display="";
+document.getElementById('s1').style.height=480;
+}
+
+function ShowDetailsTab()//For Showing Details
+{
+document.all.DetailsHide.style.display="None";
+document.all.DetailsShow.style.display="";
+document.getElementById('s1').style.height=408;
+}
+
+function PrintReport()
+{
+  NewWin('/Magic94Scripts/mgrqispi94.dll?APPNAME=RentProWeb&PRGNAME=EmployeeInformation&Arguments=-A9,-A'+document.forms[0].LastName.value+',-A'+document.forms[0].FirstName.value+',-A'+document.forms[0].Branchcode.value+',-A'+document.forms[0].UserIDsearch.value+',-A'+document.forms[0].Status.value+',-A,-A'+document.forms[0].NoOfRec.value+',-A<!$MG_CalledForFindWindow>,-A'+document.forms[0].EmpCodeSearch.value,'Employee','Proceed','left=10,top=10,HEIGHT=550,WIDTH=860,scrollbars=1,status=0,menubar=1');
+}
+
+
+function ClearFields()
+{
+ 				 with(document.forms[0])
+				 {
+					 LastName.value="";
+					 FirstName.value="";
+				 }
+}
+
+function Check()
+{
+ 				 with(document.forms[0])
+				 {
+						submit();
+					}
+}
+
+
+function ShowDetails(doj,gender,rep,dom,Empcode)
+{
+  with(document.forms[0])
+	{
+	 /*DOJ.value=doj;
+	 REP.value=rep;
+	 DOM.value=dom;
+	 if(gender=='M')
+	 	 Gender.value='|^Male^|';
+	 else if(gender=='F')
+	 	 Gender.value='|^Female^|';
+	 else
+	 	 Gender.value='';
+	 EMPLOYEECODE.value=Empcode;*/
+  }
+}
+
+function AssignValue(UserIDVal)
+{
+ 	with(document.forms[0])
+	{
+		UserID.value=UserIDVal;
+	}
+}
+function MenuApp(ClickMenuId)
+{
+ with(document.forms[0])
+    {
+    var winhandle;
+
+
+    var empid = document.forms[0].UserID.value;
+
+	if(ClickMenuId=='PR')
+    {
+		PrintReport();
+    }
+    else if(ClickMenuId=='VL')
+			winhandle=NewWin('/Magic94Scripts/mgrqispi94.dll?appname=RentProWeb&prgName=ShowDateChangeLog&Arguments=-A07,-A'+empid,'ShowLog','ShowLog','left=10,top=10,HEIGHT=500,WIDTH=700,scrollbars=1,status=0,resizable=1');
+	else if(ClickMenuId=="V")
+	 winhandle = NewWin('/view/'+UserID.value);
+    else if(ClickMenuId=="C")
+		winhandle=NewWin('/create');
+    else if(ClickMenuId=="M")
+    {
+		winhandle=NewWin('/modify/'+UserID.value);
+	}
+	else if(ClickMenuId=="D")
+    winhandle=NewWin('/delete/'+UserID.value);
+		else if(ClickMenuId=="U")
+    winhandle=NewWin('/Magic94Scripts/mgrqispi94.dll?appname=RentProWeb&prgName=UploadProgramme&Arguments=-AE','Employee','Upload','left=10,top=10,HEIGHT=200,WIDTH=650,scrollbars=1,status=0');
+    else if(ClickMenuId=="RP")
+    winhandle=NewWin('/Magic94Scripts/mgrqispi94.dll?appname=RentProWeb&prgName=DisplayResetPassword','Employee','Modify','left=10,top=10,HEIGHT=690,WIDTH=880,scrollbars=0,status=0');
+    else if(ClickMenuId=="S")
+    {
+      if(window.name=='RepPick')
+    	{
+			 opener.document.forms[0].ReportingTo.value=document.forms[0].UserID.value;
+
+			 opener.checkReportingPerson();
+    	}
+    	else if(window.name=='UserPickForMenus')
+    	{
+			 opener.document.forms[0].User.value=document.forms[0].UserID.value;
+
+			 opener.checkUser();
+    	}
+		else if(window.name=='UserPick')
+    	{
+			 opener.document.forms[0].User.value=document.forms[0].UserID.value;
+
+			 opener.checkUser();
+    	}
+    	else if(window.name=='SalesMan')
+    	{
+			 opener.document.forms[0].SalesMan.value=document.forms[0].UserID.value;
+
+			 opener.checkSalesMan();
+    	}
+			else if(window.name=='ConPerson')
+    	{
+			 opener.document.forms[0].ConPerson.value=document.forms[0].UserID.value;
+
+			 opener.checkConPerson();
+    	}
+			else if(window.name=='CreditManager')
+    	{
+			 opener.document.forms[0].CreditManager.value=document.forms[0].UserID.value;
+
+			 opener.checkCreditManager();
+    	}
+    	else if(window.name=='RegionsEmp')
+			{
+       opener.document.forms[0].ContactPerson.value=document.forms[0].UserID.value;
+
+			}
+			else if(window.name=='RL')
+			{
+           opener.document.forms[0].LocationManager.value=document.forms[0].UserID.value;
+
+			}
+			else if(window.name=='AvisUserId')
+			{
+				opener.document.forms[0].AvisUserId.value=document.forms[0].UserID.value;
+
+			}
+    	else
+    	 opener.document.forms[0].UserID.value=document.forms[0].UserID.value;
+
+    	 window.close();
+    }
+	}
+}
+function createjsDOMenu()
+{
+ QAType=2;
+ var CEmp=true,MEmp=true,VEmp=true,SEmp=true,DEmp=true,UEmp=true,VLItem=true,PRItem=true;
+
+ 		with(document.forms[0])
+    {
+    		var AccessMenuRights='<!$MG_AccessMenuRights>';
+    		//*Checking Access Rights
+    	 /*		 if(!(CheckInStr(AccessMenuRights,'VEmp')))
+    		 		VEmp=false;
+    		 if(!(CheckInStr(AccessMenuRights,'CEmp')))
+    		 		CEmp=false;
+    		 if(!(CheckInStr(AccessMenuRights,'MEmp')))
+				       MEmp=false;
+   			if(!(CheckInStr(AccessMenuRights,'RPEmp')))
+    		 		oPopup.document.getElementById('RPEmp').disabled=true;*/
+
+
+    		//* End Checking Access Rights
+
+
+    		 /*if(!(CheckInStr(AccessMenuRights,'CrtEmp')))
+    		 		CEmp=false;
+    		 if(!(CheckInStr(AccessMenuRights,'ModEmp')))
+    		 		MEmp=false;
+    		 if(!(CheckInStr(AccessMenuRights,'ViewEmp')))
+    		 		VEmp=false;
+    		 if(!(CheckInStr(AccessMenuRights,'DelEmp')))
+    		 		DEmp=false;
+    		 if(!(CheckInStr(AccessMenuRights,'UPLoadEmp')))
+    		 		UEmp=false;
+    		 if(!(CheckInStr(AccessMenuRights,'LogEmp')))
+    		 		VLItem=false;
+    		 if(!(CheckInStr(AccessMenuRights,'PrintEmp')))
+    		 		PRItem=false;*/
+
+
+    			if(UserID.value=='')
+    			{
+    			 if(1!=2)
+    			 {
+    				VEmp=false;
+    				MEmp=false;
+						DEmp=false;
+						VLItem=false;
+					 }
+    			 else
+    			 {
+    			     VEmp=false;
+   					 SEmp=false;
+					 }
+    		   }
+
+
+    	}
+
+		   cursorMenu1 = new jsDOMenu(120);
+ 		   with(cursorMenu1)
+	     {
+				if(1!=2)
+			  	{
+            addMenuItem(new menuItem("|^Create^|","", "C", CEmp));
+            addMenuItem(new menuItem("-","","","","hr"));
+            addMenuItem(new menuItem("|^Modify^|", "", "M",MEmp));
+            addMenuItem(new menuItem("|^View^|", "", "V",VEmp));
+            addMenuItem(new menuItem("|^Delete^|", "", "D",DEmp));
+
+            addMenuItem(new menuItem("|^Print Report^|","", "PR", PRItem));
+				}
+				else
+      	   {
+    			  addMenuItem(new menuItem("|^Select^|","", "S", SEmp));
+					  addMenuItem(new menuItem("|^View^|", "", "V",VEmp));
+       	 }
+         setPopUpMenu(cursorMenu1);
+         activatePopUpMenuBy(parseInt(document.forms[0].ImgContextMenuClick.value),2);
+	   }
+
+}
+
+function UploadCriteria()
+{
+    with(document.forms[0])
+    {
+      //Status.value=StatusPrevVal.value;
+    }
+}
+
+function CheckForm()
+{
+    document.forms[0].style.cursor='wait';
+    if(document.forms[0].AutoRefresh.checked)
+    					 setCookie('Drv_AutoRefresh','Y', null,'/', null, null);
+    else
+    					 setCookie('Drv_AutoRefresh','N', null,'/', null, null);
+    document.forms[0].submit()
+}
+</script>
+
+</head>
+<body topmargin="5" leftmargin="1" onload="UploadCriteria()">
+<FORM action="/" method="POST" name="EmployeeInformation" >
+
+		<INPUT type="hidden" name="callingFrom" value="1">
+		<INPUT type="hidden" name="UserID" value="">
+		<INPUT type="hidden" name="Branch" value="">
+		<INPUT type="hidden" name="Name1" value="">
+		<INPUT type="hidden" name="EmpCode" value="">
+
+		<INPUT type="hidden" name="Email" value="">
+		<INPUT type="hidden" name="ImgContextMenuClick" value="1">
+
+		<INPUT type="hidden" name="NoOfRec" value="<!$MG_NoOfRec>">
+
+		<INPUT type="hidden" name="StatusPrevVal" value="<!$MG_StatusPrevVal>">
+<table width="838" border="0" cellpadding="0" cellspacing="0" >
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="18" height="39" valign="top" ><img src="\static\Images94\mainWindow\window_top_left_corner.jpg" width="18" height="39"></td>
+    <td width="550" valign="middle" background="\static\Images94\mainWindow\window_header_bg.jpg" class="windowHeader">&nbsp;|^Access^| &nbsp; <img src="\static\Images94\mainWindow\window_header_arrow.jpg"> &nbsp; |^User Information^| </td>
+ 	<td colspan="3" align="right" valign="middle" background="\static\Images94\mainWindow\window_header_bg.jpg" class="windowHeader">
+ 	<!--<img src="\static\Images94\QuickAccess\printer_icon.jpg" align="absmiddle" onclick="javascript:PrintReport();"> &nbsp;|^Print^|   &nbsp; <img src="\static\Images94\mainWindow\window_header_right.jpg" width="9" height="39" align="absmiddle">--></td>
+  </tr>
+  <tr>
+    <td rowspan="3" valign="top" background="\static\Images94\mainWindow\window_left_border.jpg"><!--DWLayoutEmptyCell-->&nbsp;</td>
+		<td height="80" colspan="3" valign="top" >
+		<table border="0" class="qAccessCriteria" cellpadding="0" cellspacing="0" width="100%" >
+		<tr>
+  			<td width="18" height="85" valign="middle" align="center" background="\static\Images94\QuickAccess\dark_blue_bg.jpg" class="bottomGreyBorder"> <img src="\static\Images94\QuickAccess\criteria.jpg"> </td>
+				<td  valign="top" >
+				<table border="0" class="qAccessCriteria" cellpadding="1" cellspacing="1" width="100%" >
+			 	 <tr>
+ 			 		 <td  nowrap >|^Last Name^|</td>
+					 <td colspan="1" nowrap><input type="text" name="LastName" value="{{ lastname }}" class="textInputField" size=35 >  </td>
+					 <td nowrap>|^First Name^|</td>
+					 <td><input type="text" name="FirstName" value="{{ firstname }}" class="textInputField" size=35 ></td>
+					  <TD align=right nowrap ><input type="button" name="Search_Butt" value="|^Search^|" class="buttonQA" onclick="javascript:document.forms[0].style.cursor='wait';Check();"></td>
+				</tr>
+			 	<tr>
+			 		 <TD align=right colspan ="5"><input type="button" name="ClearSearch" value="|^Clear^|" class="buttonQA" onclick="ClearFields()"></td>
+	 		 	</tr>
+				</table>
+				</td>
+		</tr>
+	</table>
+	</td>
+    <td width="18" rowspan="3" valign="top" background="\static\Images94\mainWindow\window_right_border.jpg"><!--DWLayoutEmptyCell-->&nbsp;</td>
+</tr>
+<tr>
+<TD colspan=3>
+		<table border="0"  class="qAccessDetails" cellpadding="0" cellspacing="0" width="100%" >
+		<tr>
+		<!-- List Heading -->
+		<td width="16" height="85"counter valign="middle" rowspan="2" align="center" background="\static\Images94\QuickAccess\dark_blue_bg.jpg"><img src="\static\Images94\QuickAccess\list.jpg"> </td>
+		<td>
+    	<div id='s1' style="overflow: auto;    height: 408;border-color:none; padding:0px; margin: 0px ;background-color:#ffffff;" >
+  			<table border="1" id="Information"  style="behavior:url(/static/GenScripts94/tablehl.htc);background-color:#D2E4FC; " slcolor='' hlcolor='' class="<!$MG_TableClass>" bordercolor="#C1C1C1" width="100%">
+		     <thead>
+     		 <tr class="qAccessTableHdr">
+			 		 	<TH>&nbsp; </TH>
+			 		  <TH>|^UserID^|</TH>
+						<TH>|^Name^|</TH>
+  		</tr>
+		</THEAD>
+  	<tbody>
+		{% for entry in entries %}
+		<TR  class="qAccessTableSelectedRow"  onclick="AssignValue('{{ entry[0] }}');" oncontextmenu="AssignValue('{{ entry[0] }}');" onmouseover="ShowDetails('');" >
+  					<TD><img src="\static\Images94\QuickAccess\row_icon.jpg"  onclick="AssignValue('{{ entry[0] }}');ShowDetails('');document.forms[0].ImgContextMenuClick.value=0;leftClickHandler(window.event);initjsDOMenu();document.forms[0].ImgContextMenuClick.value=1;"></TD>
+			 		  <TD class=ListSmallData>{{ entry[0] }}</TD>
+						<TD class=ListSmallData>{{ entry[1] }} {{ entry[2] }}</TD>
+     </TR>
+		 {% endfor %}
+		</tbody>
+  	<!--<!$MGIF_NORecFoundInDB>
+		<tr id=Information1  class="qAccessTableSelectedRow" onmouseover="AssignValue('')">
+		       <td colspan=12 background="\static\Images94\QuickAccess\dark_blue_bg.jpg">&nbsp;</td>
+	  </tr>
+	  <!$MGENDIF>-->
+		</table>
+		</div>
+	</td>
+</tr>
+<tr>
+<!--<td colspan=11 style="background-color:#D2E4FC;" class="Inputname"><!$MG_NoOfRec>&nbsp;<!$MG_RecFoundStr></td>-->
+	<td colspan=3>
+					<table summary="" width="100%" class="qAccessCriteria" border="0" cellpadding="0" cellspacing="0" >
+					<tr>
+							<!--td width="18"  valign="middle" align="center" background="\static\Images94\QuickAccess\dark_blue_bg.jpg"></td-->
+							<td background="\static\Images94\mainWindow\window_grey_bg.jpg"  align="left">
+								|^Records^|&nbsp;{{ counter[0] }}&nbsp;
+							</td>
+					</tr>
+			 		</table></td>
+			</tr>
+		</table>
+	</td>
+</tr>
+
+	 <tr>
+    <td height="18" valign="top"><img src="\static\Images94\mainWindow\window_bottom_left_corner.jpg" width="18" height="18"></td>
+    <td colspan="3" valign="top" background="\static\Images94\mainWindow\window_bottom_border.jpg"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td valign="top"><img src="\static\Images94\mainWindow\window_bottom_right_corner.jpg" width="18" height="18"></td>
+  </tr>
+  <tr>
+    <td height="1"></td>
+    <td></td>
+    <td width="258"></td>
+    <td></td>
+  </tr>
+
+</table>
+
+
+
+	<SCRIPT FOR =Information EVENT = oncontextmenu>
+		leftClickHandler(window.event);
+		initjsDOMenu();
+		return false;
+</script>
+
+</form>
+</body>
+</html>

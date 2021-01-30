@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!--
+Template path :templates\CreateNewUser.html
+Author :Prem
+Purpose : Create Users.
+-->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;"  charset="UTF-8">
+<title> {{ClickMenuID}} User</title>
+<LINK rel="stylesheet" type="text/css" href="/static/GenScripts94/Def.css">
+<link rel="stylesheet" type="text/css" href="/static/GenScripts94/qa.css" title="styles">
+<script language="javascript" src="/static/GenScripts94/GenFunctions.js"></script>
+<script language="javascript" src="/static/GenScripts94/DateFunctions.js"></script>
+<script language="JavaScript" src="/static/GenScripts94/calendar.js"></script>
+<script language="JavaScript" type="text/javascript">
+
+var Folder_No = 42;
+var Page_No=399;
+function Check_Form(){
+with(document.forms[0])
+	{
+        if(ClickMenuID.value=="Modify")
+            action='/modify/'+UserID.value;
+        submit();
+	}
+}
+function Init(){
+with(document.forms[0])
+	{
+	    alert(ClickMenuID.value)
+		if(ClickMenuID.value=="View"){
+			LastName.disabled = true;
+			FirstName.disabled = true;
+			Save_Bt.style.display = "none";
+			Clear_BT.style.display = "none";
+		}
+	}
+}
+function ClearData()
+{
+	with(document.forms[0])
+	{
+		DOC_DES.value="";
+		PAGENO.value="";
+		if(CompanyFormatCode.value==89)
+			documentType.value="";
+	}
+}
+
+//-->
+</script>
+</head>
+<body onload="Init()">
+<FORM action="/create" method="POST"  ENCTYPE="multipart/form-data">
+<INPUT type="hidden" name="ClickMenuID" value="{{ ClickMenuID }}">
+<TABLE  border=0 cellspacing=0 cellpadding=0 width="800px">
+<tr>
+    <td valign="top" class="LeftCorner">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td width="100%"valign="middle" class="MainHeader">{{ClickMenuID}} Users&nbsp;
+	</td>
+    <td valign="middle" class="MainHeader">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+    <td valign="top" class="LeftBorder"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td  width="100%">
+    <!-- Every thing goes in this block -->
+    <table class="Tablebox"  width="100%" cellspacing=0 cellpadding=0  ><!-- Main Table -->
+    <tr>
+        <td>
+            <table border=1 class="box" width="100%">
+						<col width = "15%"/>
+						<col width = "35%"/>
+						<col width = "15%"/>
+						<col width = "35%"/>
+						</td></tr>
+						<tr>
+                  						<td nowrap>
+					|^User ID^|
+				</td>
+				<td colspan="3">
+				<input type="text" class="readOnly_textInputField" name="UserID" value= "{{user}}"  readonly size=10 >
+				</td>
+                        </tr>
+                <tr>
+                    <td nowrap>
+					    |^Last Name^|
+				    </td>
+                    <td>
+                        <input type="text" class="textInputField" name="LastName" maxlength=50 value="{{LastName}}" size=50 >
+                    </td>
+                    <td nowrap>
+					    |^First Name^|
+				    </td>
+                    <td>
+                        <input type="text" class="textInputField" name="FirstName" maxlength=50 value="{{FirstName}}" size=50 >
+                    </td>
+				</tr>
+          			</table>
+                </td>
+            </tr>
+						<tr>
+								<td>
+                    <table summary="" border=0 class="box" width="100%">
+                    <tr>
+                    <td >
+					    <td align="right"><input type="button" class="buttonMdTp3" value="|^Proceed^|" name="Save_Bt" id="Save_Bt" onclick="javascript:Check_Form();">
+						<INPUT type="button"  class="buttonMdTp3" name="Clear_BT" id="Clear_BT" value="|^Clear^|" onclick="ClearData()">
+						<input type="button" id="EnbButton" class="buttonMdTp3" value="|^Close^|" name="Exit_Bt" onclick="javascript:window.close();">	</TD>
+                    </td>
+                    </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+        </td>
+        <td valign="top" class="RightBorder"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    </TR>
+    <tr>
+    <td valign="top" class="BottomLeftCorner"></td>
+    <td valign="top" class="BottomBorder"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td valign="top" class="BottomRightCorner"></td>
+    </tr>
+    </table>
+</form>
+</body>
+</html>
