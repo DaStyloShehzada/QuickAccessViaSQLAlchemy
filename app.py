@@ -24,7 +24,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = "mssql+pyodbc:///?odbc_connect=%s" % params
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db = SQLAlchemy()
-
+    db.init_app(app)
     db_entries = []
     query = sqlparams.SQLParams('named', 'qmark')
 
@@ -36,9 +36,7 @@ def create_app():
         FirstName = db.Column('FIRST_NAME', db.String, default='')
 
 
-    @app.before_first_request
-    def create_tables():
-        db.create_all()
+
 
     @app.route('/', methods=["GET", "POST"])
     def home(lastname="", firstname=""):
