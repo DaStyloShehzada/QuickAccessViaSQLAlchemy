@@ -23,13 +23,11 @@ def create_app():
         "UID=prems;"
         "PWD=prem123;"
     )
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mssql+pyodbc:///?odbc_connect=%s" % params
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://hmvncwnwoauvgg:9526e7e0789e116a88664d7439507af9d138da5bc2e6c69c92109b5550450263@ec2-52-2-6-71.compute-1.amazonaws.com:5432/d5fc4clihg7k0q"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db = SQLAlchemy()
     db.init_app(app)
     db_entries = []
-    query = sqlparams.SQLParams('named', 'qmark')
-
 
     class QuickAccess(db.Model):
         __tablename__ = 'FIRST_QA_EMP'
@@ -37,18 +35,15 @@ def create_app():
         LastName = db.Column('LAST_NAME', db.String, default='')
         FirstName = db.Column('FIRST_NAME', db.String, default='')
 
-
-
+    @app.before_first_request
+    def create_tables():
+        db.create_all()
 
     @app.route('/', methods=["GET", "POST"])
     def home(lastname="", firstname=""):
         if request.method == 'POST':
             lastname = request.form.get('LastName')
             firstname = request.form.get('FirstName')
-        """sql, params = query.format("SELECT * FROM FIRST_QA_EMP where (:lname = '' OR (LAST_NAME != '' "
-                                   "AND LAST_NAME = :lname)) "
-                                   "AND (:fname = '' OR (FIRST_NAME != '' AND FIRST_NAME = :fname))",
-                                   {"lname": lastname, "fname": firstname})"""
         Filtered = QuickAccess.query.filter(or_((lastname == ""), (QuickAccess.LastName == lastname)),
                                             or_((firstname == ""), (QuickAccess.FirstName == firstname))).all()
         db_entries = [
