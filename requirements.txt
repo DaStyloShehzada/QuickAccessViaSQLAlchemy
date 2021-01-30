@@ -7,8 +7,5 @@ Werkzeug==1.0.1
 gunicorn
 python-dotenv
 sqlalchemy
-<<<<<<< HEAD
 flask_sqlalchemy
-=======
-flask_sqlalchemy 
->>>>>>> acb1fb1dcb14e9e8f539d65334e6bacc90b563b9
+
