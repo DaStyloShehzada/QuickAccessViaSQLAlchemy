@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<!-- 
+Template path : Fleet\DynamicCombo.htm
+Author :
+Purpose :
+Referred Program : 
+-->
+
+<meta http-equiv="Pragma" content="no-cache">
+	<title>Untitled</title>
+	<LINK rel="stylesheet" type="text/css" href="/EngDev/GenScripts94/Rentpro.css">
+	<script>
+	var cmbname="<!$MG_CMBNAME>";
+	var code_arr=new Array();
+	var text_arr=new Array();
+	<!$MGREPEAT>
+	code_arr[<!$MG_counter>]="<!$MG_Code>";
+	text_arr[<!$MG_counter>]="<!$MG_text>";
+	<!$MGENDREPEAT>
+	code_arr[0]="<!$MG_zeroCode>";
+	text_arr[0]="<!$MG_zeroText>";
+	var cmbobj=eval("parent.window.document.forms[0]."+cmbname);
+
+	cmbobj.options.length=code_arr.length;
+
+	for(i=0;i<code_arr.length;i++)
+	{
+	cmbobj.options[i].value=code_arr[i];
+	cmbobj.options[i].text=text_arr[i];
+	}
+	cmbobj.value="<!$MG_SelectedCode>";
+	//alert(cmbobj.value);
+		
+	</script>
+</head>
+
+<body>
+</body>
+</html>
