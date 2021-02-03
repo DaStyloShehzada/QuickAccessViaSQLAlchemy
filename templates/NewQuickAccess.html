@@ -58,6 +58,7 @@ function ClearFields()
 				 {
 					 LastName.value="";
 					 FirstName.value="";
+					 category.value="";
 				 }
 }
 
@@ -269,6 +270,7 @@ function UploadCriteria()
     with(document.forms[0])
     {
       //Status.value=StatusPrevVal.value;
+      	category.value = "{{ selected_cat }}"
     }
 }
 
@@ -284,7 +286,7 @@ function CheckForm()
 </script>
 
 </head>
-<body topmargin="5" leftmargin="1" onload="UploadCriteria()">
+<body topmargin="5" leftmargin="1" onload="UploadCriteria();">
 <FORM action="/" method="POST" name="EmployeeInformation" >
 
 		<INPUT type="hidden" name="callingFrom" value="1">
@@ -323,7 +325,17 @@ function CheckForm()
 					  <TD align=right nowrap ><input type="button" name="Search_Butt" value="|^Search^|" class="buttonQA" onclick="javascript:document.forms[0].style.cursor='wait';Check();"></td>
 				</tr>
 			 	<tr>
-			 		 <TD align=right colspan ="5"><input type="button" name="ClearSearch" value="|^Clear^|" class="buttonQA" onclick="ClearFields()"></td>
+					<td nowrap>Category</td>
+					<td>
+
+							<select id="category" name="category">
+								<option value="">|^All^|</option>
+								{% for id, cat in person_cat %}
+							  		<option value="{{id}}">{{cat}}</option>
+								{% endfor %}
+								</select>
+					</td>
+			 		 <TD align=right colspan ="2"><input type="button" name="ClearSearch" value="|^Clear^|" class="buttonQA" onclick="ClearFields()"></td>
 	 		 	</tr>
 				</table>
 				</td>

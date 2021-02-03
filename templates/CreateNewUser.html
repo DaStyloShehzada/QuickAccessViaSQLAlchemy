@@ -29,9 +29,11 @@ function Init(){
 with(document.forms[0])
 	{
 	    alert(ClickMenuID.value)
+	    category.value = {{selected_cat}}
 		if(ClickMenuID.value=="View"){
 			LastName.disabled = true;
 			FirstName.disabled = true;
+			category.disabled = true;
 			Save_Bt.style.display = "none";
 			Clear_BT.style.display = "none";
 		}
@@ -96,6 +98,17 @@ function ClearData()
                         <input type="text" class="textInputField" name="FirstName" maxlength=50 value="{{FirstName}}" size=50 >
                     </td>
 				</tr>
+                <tr>
+                    <td nowrap>Category</td>
+					<td colspan="3">
+
+							<select id="category" name="category">
+								{% for id, cat in person_cat %}
+							  		<option value="{{id}}">{{cat}}</option>
+								{% endfor %}
+								</select>
+					</td>
+                </tr>
           			</table>
                 </td>
             </tr>
