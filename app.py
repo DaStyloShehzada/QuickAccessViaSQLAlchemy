@@ -85,7 +85,7 @@ def create_app():
         user_id = "After Save"
         person_cat = []
         person_cat = categories()
-        return render_template("CreateNewUser.html", user=user_id, ClickMenuID="Create", person_cat=person_cat)
+        return render_template("CreateNewUser.html", user=user_id, ClickMenuID="Create", selected_cat= None, person_cat=person_cat)
 
     @app.route('/delete/<int:user_id>', methods=["GET", "POST"])
     def delete(user_id):
@@ -138,3 +138,4 @@ def create_app():
         print(cat)
         return cat
     return app
+    
